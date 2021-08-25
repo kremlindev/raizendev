@@ -5,7 +5,10 @@ import(
   "github.com/labstack/echo/v4"
 )
 func main() {
+  fmt.Println("-------------------------------")
   fmt.Println("🎯 Proje Başarıyla Başlatıldı")
+  fmt.Println("🎯 Herhangi bir sorun bulunamadı")
+  fmt.Println("-------------------------------")
   e := echo.New()
   e.GET("/", func(c echo.Context) error {
     return c.File("./src/main.html")
