@@ -1,16 +1,8 @@
 :root{
-  --blurple:  #5865F2;
-	--green: #57F287;
-	--yellow:  #FEE75C;
-	--pink: #EB459E;
-	--red:  #ED4245;
-	--grey:  #99aab5;
-	--dark: #2c2f33;
-	--black: #23272a;
-	--orange:  #faa61a;
+        --blurple:  #5865F2;
 	--background:  rgb(24, 26, 34);
-  --text: #ffffff;
-  --font1: "Quicksand", sans-serif;
+        --text: #ffffff;
+        --font1: "Quicksand", sans-serif;
 }
 ::selection{
   color:var(--blurple)
@@ -18,7 +10,6 @@
 * {
   background-color: var(--background);
   color: var(--text);
-  background-repeat: false;
   font-family: var(--font1);
 }
 .pp{
@@ -40,44 +31,6 @@
 }
 /* ----------------------------------------------------------------------------- */
 /* ANIMASYONLAR */
-@-webkit-keyframes morphing {
-  0% {
-    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-    -webkit-box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
-            box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
-  }
-  25% {
-    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
-  }
-  50% {
-    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
-    -webkit-box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
-            box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
-  }
-  75% {
-    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
-  }
-}
-
-@keyframes morphing {
-  0% {
-    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-    -webkit-box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
-            box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
-  }
-  25% {
-    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
-  }
-  50% {
-    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
-    -webkit-box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
-            box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
-  }
-  75% {
-    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
-  }
-}
-
 @-webkit-keyframes smooth-shake {
   0%,
   to {
