@@ -25,5 +25,14 @@ func main() {
     }
     return c.Redirect(http.StatusMovedPermanently, "/")
   })
+  e.GET("/api", func(c echo.Context) error {
+    if c.QueryParam("api") == "api" {
+      c.JSON('{"status": "200"}') 
+    }
+     if error != nil {
+     c.JSON('{"status": "400"}')  
+    }
+    c.JSON('{"status": "204"}')
+  })
   e.Logger.Fatal(e.Start(":3000"))
 }
